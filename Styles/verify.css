@@ -1,0 +1,85 @@
+/* Style du conteneur principal */
+.form-container {
+    width: 80%; /* Ajustez la largeur du conteneur principal selon vos besoins */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style du logo */
+.logo {
+    max-width: 100px; /* Ajustez la largeur du logo selon vos besoins */
+}
+
+/* Style du formulaire et des éléments du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le lien "Login" */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les boutons */
+.profile-logout-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-success {
+    background-color: green; /* Couleur de fond pour le bouton de déconnexion */
+}

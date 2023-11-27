@@ -1,0 +1,132 @@
+/* Reset CSS (normalize) */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  padding: 14px 16px;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Sections */
+.hero, .about, .services, .portfolio, .contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: white;
+  color: #007bff;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f7f9fc;
+}
+
+/* Grids */
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.col-md-4 {
+  padding: 15px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Section Convertisseur */
+.converter-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.converter h1 {
+  margin-bottom: 0.5px;
+  color: #333;
+}
+
+.converter input, .converter select, .converter button {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.converter button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.converter button:hover {
+  background-color: #555;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
