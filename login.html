@@ -1,0 +1,71 @@
+<?php  
+require "functions.php";
+
+$errors = array();
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+
+	$errors = login($_POST);
+
+	if(count($errors) == 0)
+	{
+		header("Location: main.php");
+		die;
+	}
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+
+   <!-- Lien vers le fichier CSS personnalisé -->
+   <link rel="stylesheet" href="Styles/register.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+<div class="form-container">
+
+<div>
+			<?php if(count($errors) > 0):?>
+				<?php foreach ($errors as $error):?>
+					<?= $error?> <br>	
+				<?php endforeach;?>
+			<?php endif;?>
+
+		</div>
+      
+<form method="POST" action="" enctype="multipart/form-data">
+      <h3>Login now</h3>
+      <input type="email" name="email" placeholder="Enter email" class="box" required>
+      <input type="password" name="password" placeholder="Enter password" class="box" required>
+      <br>
+      <div><a href="forgot.php">Forgot password?</a></div>
+      <br>
+      <input type="submit" name="submit" value="Login now" class="btn">
+      <p>Don't have an account? <a href="register.php">Register now</a></p><br>
+
+<div class="social-buttons">
+    <a class="btn-vk" href="https://lien-vers-authentification-vk">
+        <i class="fab fa-vk"></i>
+    </a>
+    <a class="btn-google" href="https://lien-vers-authentification-google">
+        <i class="fab fa-google"></i>
+    </a>
+    <a class="btn-facebook" href="https://lien-vers-authentification-facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+</div>
+
+   </form>
+</div>
+</body>
+</html>
